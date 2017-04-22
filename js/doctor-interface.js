@@ -20,9 +20,6 @@ $(document).ready(function(){
   $('#doctorSearch').submit(function(){
     event.preventDefault();
 
-    var medicalIssue = $('#medicalIssue').val();
-    $('#medicalIssue').val('');
-
     currentDoctorObject.getDoctors(medicalIssue);
   });
 });

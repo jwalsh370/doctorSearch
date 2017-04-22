@@ -85,7 +85,6 @@ gulp.task('cssBuild', function() {
     .pipe(browserSync.stream());
 });
 
-//jquery and css tasks
 
 var lib = require('bower-files') ({
   "overrides":{
@@ -112,4 +111,4 @@ gulp.task('cssBower', function() {
     .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('bower', ['jsBower', 'cssBower']);
+gulp.task('bower', ['bowerJS', 'cssBower']);
