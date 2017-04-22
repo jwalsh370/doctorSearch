@@ -13,7 +13,7 @@ exports.getDoctors = function(medicalIssue, searchResults) {
 
         individualDoctor.practiceName = data.practices.name;
         individualDoctor.phone = data.practices.phones.number;
-        individualDoctor.website = doctor.website;
+        individualDoctor.website = doctor.website; 
         individualDoctor.office = doctor.name;
         individualDoctor.address = doctor.visit_address;
 
