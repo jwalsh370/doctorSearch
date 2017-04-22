@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <script type="text/javascript" src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>The Doctors</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="doctorSearch">
+        <div class="form-group">
+          <label for="medicalIssue" >What is your medical issue?</label>
+          <input id="medicalIssue" type="text" class="form-control" value="headache, fever, dizziness">
+        <button type="submit" class="btn btn-sucess" id="button">Submit</button>
+          </div>
+      </form>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hovered">
+          <thead>
+            <tr class="info">
+              <th>Practice Name</th>
+              <!-- <th>Doctor</th>
+              <th>Gender</th>
+              <th>Phone</th>
+              <th>Website</th>
+              <th>Office Address</th> -->
+            </tr>
+          </thead>
+          <tbody id="doctors"></tbody>
+        </table>
+        </div>
+        <div id="map"></div>
+        <div id="error"></div>
+      </div>
+  </body>
+</html>
