@@ -9,29 +9,47 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+       <h1>See All Doctors</h1>
+      </div>
+     <form id="allDoctors">
+       <div class="form-group">
+         <label for="zip" class="col-sm-6 control-label">Enter Zip code</label>
+         <div class="col-sm-6">
+           <input id="zip" type="text" value="97211">
+         </div>
+       </div>
+     </form><hr>
+     <form>
+     <div class="form-group">
+      <label for="distance" class="col-sm-6 control-label">Enter distance in miles from zip code proximity</label>
+      <div class="col-sm-6">
+      <input id="distance" type="text" value="5">
+      </div>
+      </div>
+    </form><hr>
       <form id="doctorSearch">
-        <div class="form-group">
-          <label for="medicalIssue" >What is your medical issue?</label>
-          <input id="medicalIssue" type="text" class="form-control" value="headache, fever, dizziness">
-        <button type="submit" class="btn btn-sucess" id="button">Submit</button>
-          </div>
-      </form>
+      <div class="form-group">
+       <label for="issue" >What is your medical issue?</label>
+       <input id="issue" type="text" class="form-control" value="flu">
+       <button type="submit" class="btn btn-warning" id="button">Submit</button>
+      </div>
+    </form><hr>
       <div class="table-responsive">
         <table class="table table-bordered table-striped table-hovered">
           <thead>
             <tr class="info">
               <th>Practice Name</th>
-              <!-- <th>Doctor</th>
+              <th>Doctor</th>
               <th>Gender</th>
               <th>Phone</th>
               <th>Website</th>
-              <th>Office Address</th> -->
+              <th>Office Address</th>
             </tr>
           </thead>
           <tbody id="doctors"></tbody>
         </table>
         </div>
-        <div id="map"></div>
         <div id="error"></div>
       </div>
   </body>
