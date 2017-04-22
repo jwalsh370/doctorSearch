@@ -1,9 +1,9 @@
-var doctor = require('./../js/doctor.js').doctorModule;
-var mapApiKey = require('./../.env').mapApiKey;
+var Doctor = require('./../js/doctor.js').doctorModule;
+var apiKey = require('./../.env').apiKey;
 
 var currentDoctorObject = new Doctor();
 
-var doctorsDisplayed = function(doctors) {
+var displayDoctors = function(doctors) {
   doctors.forEach(function(doctor) {
     $('#doctors').append('<tr class="info">'+
                           "<td>doctor.practices.name</td>"+
@@ -17,7 +17,7 @@ var doctorsDisplayed = function(doctors) {
 };
 
 $(document).ready(function(){
-  $('#doctorSearch').submit(function(){
+  $('#allDoctors').submit(function(){
     event.preventDefault();
     var issue = $('#issue').val();
     var zip = parseInt($('#zip').val());
@@ -26,6 +26,6 @@ $(document).ready(function(){
     $('#distance').val('');
     $('#issue').val('');
 
-    currentDoctorObject.getDoctors(allDoctors, zip, distance, issue);
+    currentDoctorObject.getDoctors(displayDoctors, zip, distance, issue);
   });
 });

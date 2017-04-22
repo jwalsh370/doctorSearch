@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="build/css/styles.css">
-    <script type="text/javascript" src="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+     <link rel="stylesheet" href="build/css/vendor.css">
+     <script src="build/js/vendor.min.js"></script>
+     <script type="text/javascript" src="build/js/app.js"></script>
     <title>The Doctors</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-       <h1>See All Doctors</h1>
+       <h1>All Doctors</h1>
       </div>
      <form id="allDoctors">
-       <div class="form-group">
+       <div class="form-group well">
          <label for="zip" class="col-sm-6 control-label">Enter Zip code</label>
-         <div class="col-sm-6">
-           <input id="zip" type="text" value="97211">
-         </div>
-       </div>
-     </form><hr>
-     <form>
-     <div class="form-group">
+         <input id="zip" type="text" value="97211">
+       </div><br>
+     <div class="form-group well">
       <label for="distance" class="col-sm-6 control-label">Enter distance in miles from zip code proximity</label>
-      <div class="col-sm-6">
       <input id="distance" type="text" value="5">
       </div>
-      </div>
-    </form><hr>
-      <form id="doctorSearch">
-      <div class="form-group">
+      <div class="form-group well">
        <label for="issue" >What is your medical issue?</label>
-       <input id="issue" type="text" class="form-control" value="flu">
+       <input id="issue" type="text" class="form-control" value="flu"><hr>
        <button type="submit" class="btn btn-warning" id="button">Submit</button>
       </div>
     </form><hr>
