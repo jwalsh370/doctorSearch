@@ -12,6 +12,8 @@ var displayDoctors = function(doctors) {
                           "<td>doctor.practices.phones.number</td>"+
                           "<td>doctor.website</td>"+
                           "<td>doctor.visit_address</td>"+
+                          "<td>doctor.specialties</td>"+
+                          "<td>doctor.educations"+
                         '</tr>');
   });
 };

@@ -3,8 +3,8 @@ var apiKey = require('./../.env').apiKey;
 function Doctor() {
 }
 
-Doctor.prototype.getDoctors = function(zip, distance, issue, displayDoctors) {
-   $.get('https://api.betterdoctor.com/2016-03-01/doctors?query=' + issue + '&location=' + distance + '%2C100&user_location=' + zip + '&skip=0&limit=10&user_key=' + apiKey).then(function(response) {
+Doctor.prototype.getDoctors = function(zip, location, issue, displayDoctors) {
+   $.get('https://api.betterdoctor.com/2016-03-01/doctors?query=' + issue + '&location=' + location + '%2C100&user_location=' + zip + '&skip=0&limit=10&user_key=' + apiKey).then(function(response) {
      console.log(response);
     var allDoctors = [];
     response.doctors.forEach(function(doctor){
