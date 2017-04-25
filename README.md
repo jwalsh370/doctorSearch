@@ -23,7 +23,7 @@ Application which allows user to find a Doctor by issue and location.
  * `gulp serve`
 
 ### Known Bugs
- 1. 500 server issue.
+ 1. 401 authorization issue.
 
 ## Technology Used To Create Portfolio
 * HTML

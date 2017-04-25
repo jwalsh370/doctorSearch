@@ -8,7 +8,6 @@ function Doctor() {
 
 Doctor.prototype.getDoctors = function( issue, displayDoctors) {
    $.get(apiUrl + issue + apiLocation + apiKey).then(function(response) {
-     console.log(response);
     var allDoctors = [];
     response.doctors.forEach(function(doctor){
       var newDoctor = {};
