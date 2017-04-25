@@ -1,6 +1,6 @@
 # _Doctor Locator_
 
-#### _JavaScript Project for Epicodus - Week One: April 2017_
+#### _JavaScript Project for Epicodus - Week One:n April 2017_
 
 #### By _**Jahan Walsh (jwalsh370)**_
 

@@ -13,7 +13,7 @@ Doctor.prototype.getDoctors = function(zip, distance, issue, displayDoctors) {
       newDoctor.specialties = doctor.specialties;
       newDoctor.education = doctor.educations;
         allDoctors.push(newDoctor);
-    })
+    });
     displayDoctors(allDoctors);
   }).fail(function(error) {
   });
