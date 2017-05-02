@@ -3,31 +3,35 @@
   <head>
     <script src="bower_components/moment/min/moment.min.js"></script>
      <link rel="stylesheet" href="build/css/vendor.css">
+     <link rel="stylesheet" href="css/styles.css">
+     <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
      <script src="build/js/vendor.min.js"></script>
      <script type="text/javascript" src="build/js/app.js"></script>
     <title>The Doctors</title>
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-       <h1>All Doctors</h1>
-      </div>
-     <form id="allDoctors">
-      <div class="form-group well">
-       <label for="issue">What is your medical issue?</label>
-       <input id="issue" type="text" class="form-control" value="cancer"><hr>
-       <button type="submit" class="btn btn-warning" id="button">Submit</button>
-      </div>
-    </form><hr>
+      <div class="heading">
+        <h2> Best <br/>Doctor </h2>
+        <h2><span> Around</span> </h2>
+        <span> Want answers now? </span>
+        <form id="allDoctors">
+          <div class="form-group">
+           <label for="issue">Please enter your medical issue?</label>
+           <input id="issue" type="text" class="form-control" value="cancer"><hr>
+           <button type="submit" class="btn btn-danger" id="button">Submit</button>
+          </div>
+        </form><hr> </h2>
+</div>
       <div class="table-responsive">
         <table class="table table-bordered table-striped table-hovered">
           <thead>
-            <tr class="info">
+            <tr>
               <th>Doctor</th>
               <th>Gender</th>
               <th>Title</th>
               <th>speciality</th>
-              <th>Insurance</th>
               <th>Practice</th>
             </tr>
           </thead>
