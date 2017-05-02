@@ -8,7 +8,7 @@ var displayDoctors = function(doctors) {
     $('#doctors').append('<tr class="info">'+
                             "<td>" + doctor.name + "</td>"+
                             "<td>" + doctor.specialties + "</td>"+
-                            "<td>" + doctor.education + "</td>" +
+                            "<td>" + doctor.educations + "</td>" +
                            '</tr>'
                         );
   });
@@ -21,6 +21,6 @@ $(document).ready(function(){
     var issue = $('#issue').val();
     $('#issue').val('');
 
-    currentDoctorObject.getDoctors(displayDoctors,issue);
+    currentDoctorObject.getDoctors(issue, displayDoctors);
   });
 });
