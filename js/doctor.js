@@ -1,6 +1,5 @@
-
-var apiUrl = "https://api.betterdoctor.com/2016-03-01/doctors?query=";
-var apiLocation = "&location=45.5231%2C-122.6765%2C100&user_location=45.5231%2C-122.6765&skip=0&limit=10&user_key=";
+var apiUrl = 'https://api.betterdoctor.com/2016-03-01/doctors?query=';
+var apiLocation = '&location=45.5231%2C-122.6765%2C100&user_location=45.5231%2C-122.6765&skip=0&limit=10&user_key=';
 var apiKey = require('./../.env').apiKey;
 
 
@@ -25,7 +24,6 @@ Doctor.prototype.getDoctors = function(issue, displayDoctors) {
      $('#error').text(error.responseJSON.message);
   });
 };
-
 
 
 exports.doctorModule = Doctor;

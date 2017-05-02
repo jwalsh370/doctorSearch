@@ -8,7 +8,7 @@ var displayDoctors = function(doctors) {
     $('#doctors').append('<tr class="info">'+
                             "<td>" + doctor.name + "</td>"+
                             "<td>" + doctor.specialties + "</td>"+
-                            "<td>" + doctor.educations + "</td>" +
+                            "<td>" + doctor.education + "</td>" +
                            '</tr>'
                         );
   });
